@@ -1,0 +1,39 @@
+@keyframes move {
+  0% {
+    transform: rotate(-10deg);
+    left: 0px;
+  }
+  50% {
+    transform: rotate(10deg);
+    left: 0px;
+  }
+  100% {
+    transform: rotate(-10deg);
+    left: 0px;
+  }
+}
+
+.move {
+  animation-name: move;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+}
+
+@keyframes link-hover {
+  from {
+    color: lighten($base-color, 5%);
+    left: 0px;
+  }
+  to {
+    color: lighten($base-color, 5%);
+    left: 0px;
+  }
+}
+
+.link-hover {
+  animation-name: link-hover;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+}
